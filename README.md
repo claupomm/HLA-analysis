@@ -1,5 +1,5 @@
 # HLA analysis on RNA-seq/WES data
-HLA (human leukocyte antigen) genes are encoded on chromosome 6 and are important for the immune system. Their highly polymorphic nature makes them suitable for cell line authentication and tissue compatibility. In the following HLA analysis on leukocyte/lymphocyte cell lines is outlined as available on DSMZCellDive (https://celldive.dsmz.de/hla). Via arcasHLA RNA-seq as well as WES data can be analysed (Orenbuch et al, 2020, https://academic.oup.com/bioinformatics/article/36/1/33/5512361).
+HLA (human leukocyte antigen) genes are encoded on chromosome 6 and are important for the immune system. Their highly polymorphic nature makes them suitable for cell line authentication and tissue compatibility. In the following HLA analysis on leukocyte/lymphocyte cell lines is outlined as available on DSMZCellDive (https://celldive.dsmz.de/hla) and published for a RNA-seq dataset here: https://f1000research.com/articles/11-420. Via arcasHLA RNA-seq as well as WES data can be analysed (Orenbuch et al, 2020, https://academic.oup.com/bioinformatics/article/36/1/33/5512361).
 
 
 ## Analysis via arcasHLA
