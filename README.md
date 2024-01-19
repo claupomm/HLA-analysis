@@ -1,16 +1,23 @@
 # HLA analysis on RNA-seq/WES data
-HLA (human leukocyte antigen) genes are encoded on chromosome 6 and are important for the immune system. Their highly polymorphic nature makes them suitable for cell line authentication and tissue compatibility. In the following HLA analysis on leukocyte/lymphocyte cell lines is outlined as available on DSMZCellDive (https://celldive.dsmz.de/hla) and published for a RNA-seq dataset here: https://f1000research.com/articles/11-420. Via arcasHLA RNA-seq as well as WES data can be analysed (Orenbuch et al, 2020, https://academic.oup.com/bioinformatics/article/36/1/33/5512361).
+HLA (human leukocyte antigen) genes are encoded on chromosome 6 and are important for the immune system. Their highly polymorphic nature makes them suitable for cell line authentication and tissue compatibility. In the following HLA analysis on leukocyte/lymphocyte cell lines is outlined as available on DSMZCellDive (https://celldive.dsmz.de/hla) and published for a RNA-seq dataset here: https://f1000research.com/articles/11-420. 
+
+Via arcasHLA RNA-seq as well as WES data can be analysed (Orenbuch et al, 2020, https://academic.oup.com/bioinformatics/article/36/1/33/5512361).
+
+In the following HLA are analysed on RNA-seq basis.
+
+
 
 
 ## Analysis via arcasHLA
-Before installing the HLA analysis tool get required tools:
+Before installing the HLA analysis tool, get required tools via conda:
 ```
 DIR=/path/to/Project_folder
 cd $DIR
-export PATH="/home/cpo14/anaconda3/bin:$PATH"
-conda install biopython
-conda install bedtools
-conda install kallisto
+export PATH="/your/path/to/anaconda3/bin:$PATH"
+mamba create -n hla python=3.6  bedtools=2.27.1 kallisto=0.44.0
+mamba activate hla
+mamba install numpy scipy pandas pytest
+mamba install -c conda-forge biopython=1.77
 git clone https://github.com/RabadanLab/arcasHLA
 cd arcasHLA
 ```
